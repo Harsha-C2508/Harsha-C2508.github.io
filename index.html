@@ -1,128 +1,250 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Portfolio" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./img/linkidin.jpg" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- =====BOX ICONS===== -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <script
-      src="https://kit.fontawesome.com/fa62c117c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="./css/index.css" />
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Harsha C</title>
   </head>
-  <body class="light" id="top">
-    <header class="header center">
-      <h3>
-        <a href="#Home" class="link"
-          >HC.</a
-        >
-      </h3>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+         
+          <a href="#home" class="nav-logo"
+            ><h1>HC.</h1></a>
+        </div>
 
-      <nav class="nav center">
-        <ul class="nav__list center">
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#About">About</a>
-          </li>
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#home" class="nav-link home active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link about">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link contact">Contact</a>
+            </li>
+          </ul>
+        </div>
 
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#Skills">Skills</a>
-          </li>
-
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#Projects">Projects</a>
-          </li>
-
-          <li class="nav__list-item">
-            <a class="link link--nav" href="#Contact">Contact</a>
-          </li>
-        </ul>
+        <div class="nav-toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
       </nav>
     </header>
 
-    <main>
-        <div style="height: 800px; padding-top: 200px; text-align: left;display: flex;" class="home" id="Home">
-            <div style="width: 60%;" >
-                <h1>Hi 👋,<br> I am <span class="about__name">Harsha C</span></h1>
-                <h2 class="about__role">Full Stack Web Developer</h2>
-            </div>
-            <div>
-              <img src="https://media.giphy.com/media/rsUGLKwgSvSxmq1VrZ/giphy.gif" alt="">
-            </div>
-        </div>
-        <div class="about__contact center" style="margin-top: -200px;">
-            <a href="https://drive.google.com/file/d/1AsmFBM3Q_kA4DAzEYwpMKFlzz4LEybHB/view?usp=sharing" target="_blank">
-              <span class="btn btn--outline">Resume</span>
-            </a>
-            <a
-              href="https://github.com/Harsha-C2508"
-              aria-label="github"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class=" icon fab fa-github"></i>
-            </a>
-  
-            <a
-              href="https://www.linkedin.com/in/harsha-c-053b31233/"
-              aria-label="linkedin"
-              class="link link--icon"
-              target="_blank"
-            >
-              <i aria-hidden="true" class=" icon fab fa-linkedin"></i>
-            </a>
-          </div>
-      <!-- About -->
-      <div id="About" class="about center">
-        <h1 class="section__title">About Me</h1>
-        <div style="display: flex; margin-top: 40px;" class="about_body" >
-            <div>
-                <img src="./img/linkidin.jpg" alt="" class=".about__img" style="border-radius: 10px; height: 300px; margin-right: 30px;">
-            </div>
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid section" id="home">
+        <div class="home-data">
+          <h2 class="home-title">
+            Hi 👋,<br />I'am <span class="home-title-color">Harsha C</span><br />
+           Full Stack Web Developer
+          </h2>
 
-            <div>
-                <p class="about__desc">
-                    I'am Harsha C </br>
-                    </br>
-                    I am a Full Stack Developer, passionate about building digital </br> products that improve the everyday experience for people.</br>
-                    </br>
-                    I love to work on the most exciting projects to test my knowledge. And I am also interested in working with a team and making good relationships with colleagues. Most importantly looking for an ethical and accessible way to solve the problem faced in day-to-day life.
-                </p>
-            </div>
+          <a
+            href="https://drive.google.com/file/d/1AsmFBM3Q_kA4DAzEYwpMKFlzz4LEybHB/view?usp=sharing"
+            target="_blank"
+            class="button"
+            >Resume</a
+          >
         </div>
-      </div>
-    
-      <!-- Skills -->
-      <section class="section skills" id="Skills" style="padding-top: 150px;">
-        <h2 class="section__title">Skills</h2>
-        <ul class="skills__list">
-          <li class="skills__list-item btn btn--plain">  <i class='bx bxl-html5'></i> HTML5</li>
-          <li class="skills__list-item btn btn--plain">  <i class='bx bxl-css3'> </i>CSS3</li>
-          <li class="skills__list-item btn btn--plain"> <i class='bx bxl-javascript' ></i> JavaScript</li>
-          <li class="skills__list-item btn btn--plain"> TypeScript</li>
-          <li class="skills__list-item btn btn--plain"> <i class='bx bxl-react'></i>React</li>
-          <li class="skills__list-item btn btn--plain"> <i class='bx bxl-redux'></i>Redux</li>
-          <li class="skills__list-item btn btn--plain"> <i class='bx bxl-git'></i>Git</li>
-          <li class="skills__list-item btn btn--plain"> <i class='bx bxs-paint'></i>Material UI</li>
-        </ul>
+
+        <div class="home-social">
+          <a
+            href="https://www.linkedin.com/in/harsha-c-053b31233/"
+            target="_blank"
+            class="home-social-icon"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Harsha-C2508"
+            target="_blank"
+            class="home-social-icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+        </div>
+
+        <div class="home-img">
+          <img src="https://media.giphy.com/media/rsUGLKwgSvSxmq1VrZ/giphy.gif" alt="" />
+        </div>
       </section>
 
-      <!-- Projects -->
-      <section id="Projects" class="section projects" style="padding-top: 200px;">
-        <h2 class="section__title">Projects</h2>
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
 
-        <div class="projects__grid">
-          <div class="project">
-            <img src="./img/bobbi.png" alt="" class="project_img">
-            <h3 style="margin-top: 20px;color: blue;">Bobbibrown Clone</h3>
-            <p class="project__description">
+        <div class="about-container bd-grid">
+          <div style="text-align: center">
+            <img src="./img/linkidin.jpg" alt="profile" style="height: 350px;margin-left: 170px;border-radius: 7px;margin-bottom: 20px;">
+            <h2 class="about-subtitle"> I'am Harsha C</h2>
+            <p class="about-text">
+              I am a Full Stack Developer, passionate about building digital </br> products that improve the everyday experience for people.</br>
+            </br>
+            I love to work on the most exciting projects to test my knowledge.
+             And I am also interested in working with a team and making good 
+             relationships with colleagues. Most importantly looking for an 
+             ethical and accessible way to solve the problem faced in day-to-
+             day life.
+            </p>
+            <br />
+            <p>
+             
+              <i
+                style="color: white; font-size: 1.2rem; cursor: pointer"
+                class="bx bx-copy"
+                id="copy"
+              ></i>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-container bd-grid">
+          <div>
+            <h2 class="skills-subtitle">Tech Skills</h2>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-html5 skills-icon"></i>
+                <span class="skills-name">HTML5</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-css3 skills-icon"></i>
+                <span class="skills-name">CSS3</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-javascript skills-icon"></i>
+                <span class="skills-name">JAVASCRIPT</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-react skills-icon"></i>
+                <span class="skills-name">React</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-redux skills-icon"></i>
+                <span class="skills-name">Redux</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxs-paint skills-icon"></i>
+                <span class="skills-name">Material-UI</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="bx bxl-git skills-icon"></i>
+                <span class="skills-name">Git</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img
+                  class="skills-icon"
+                  src="https://dev-hardik.netlify.app/assets/img/typescript.png"
+                  alt=""
+                />
+                <span class="skills-name">TypeScript</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="skills-subtitle">Soft Skills</h2>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img
+                class="skills-icon"
+                src=""
+                alt=""
+              />
+                <span class="skills-name">Time Managment</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img
+                class="skills-icon"
+                src=""
+                alt=""
+              />
+                <span class="skills-name">Adaptability</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img
+                class="skills-icon"
+                src=""
+                alt=""
+              />
+                <span class="skills-name">Teamwork</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img
+                class="skills-icon"
+                src=""
+                alt=""
+              />
+                <span class="skills-name">Leadership</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <img
+                  class="skills-icon"
+                  src=""
+                  alt=""
+                />
+                <span class="skills-name">Communication</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!--===== Projects =====-->
+      <section class="projects section" id="projects">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-container">
+          <div class="project-img">
+            <img src="./img/bobbi.png" alt="BobbiBrown" />
+            <p class="project-title">Bobbibrown Clone</p>
+            <p class="project-subtitle">
               We are not an online shop, and we don't sell products. 
               We are an inspiration and online search platform that allows 
               shoppers to price compare products and proceed with their 
@@ -130,136 +252,145 @@
               Stylight online magazine offers the best in beauty, fashion,
               and home & living inspiration. If you have questions 
               concerning an order, please contact the respective online 
-              shop directly.
+              shop directly. <br />
+              <br />
+              Features : Home page,Login page ,Profile page,Product page,Cart page ,
+              Shipping-address page,Checkout page.<br />
+              <br /> Tech Stack : HTML | CSS | JavaScript | Bootstrap
             </p>
-            <p class="project__description">
-              Features : Home page,Login page ,Profile page,Product page,Cart page ,Shipping-address page,Checkout page.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Tech Stack:</li>
-              <li class="project__stack-item">HTML |</li>
-              <li class="project__stack-item">CSS |</li>
-              <li class="project__stack-item">JavaScript |</li>
-              <li class="project__stack-item">Bootstaps </li>
-            </ul>
-
-            <a
-              href="https://github.com/AnshulKumarYadav/BobbiBrown.git"
-              aria-label="source code"
-              target="_blank"
-              class="link link--icon"
-            >
-            <button class="button">GitHub  <i aria-hidden="true" class="fab fa-github"></i></button>
-            </a>
-            <a
-              href="https://remarkable-otter-86bd88.netlify.app/"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-            <button class="button">Live <i aria-hidden="true" class="fas fa-external-link-alt"></i></button>
-            </a>
+            <div class="project-btns">
+              <a
+                href="https://github.com/AnshulKumarYadav/BobbiBrown.git"
+                target="_blank"
+                class="small-btn button"
+              >
+                GitHub<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://remarkable-otter-86bd88.netlify.app/"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
           </div>
-        <!-- second project -->
-          <div class="project">
-            <img src="./img/myntra.png" alt="" class="project_img">
-            <h3 style="margin-top: 20px;color: blue;">Myntra Clone</h3>
-            <p class="project__description">
+
+          <div class="project-img">
+            <img src="./img/myntra.png" alt="myntra" />
+            <p class="project-title">Myntra Clone</p>
+            <p class="project-subtitle">
               We are the fashion expert in India. Myntra is an online shop where you 
               can buy clothes and accessories from top brands at a fair price . My 
               website is a clone of the inspiration of a real website. Here you can 
               see the products and product details of some available men's t-shirt 
-              of top brands.  
-            </p>
-            <p class="project__description">
+              of top brands.   <br />
+              <br />
               Features: Home page,Login page,Mens page,Product page,
               Product-details page,Wishlist page,Cart page, Shipping-address page ,
               Checkout page.
+              <br />
+              <br />Tech Stack : HTML | CSS | JavaScript | Chakra UI | React 
             </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Tech Stack:</li>
-              <li class="project__stack-item">HTML |</li>
-              <li class="project__stack-item">CSS |</li>
-              <li class="project__stack-item">JavaScript |</li>
-              <li class="project__stack-item">Chakra UI |</li>
-              <li class="project__stack-item">React |</li>
-              <li class="project__stack-item">React-Router</li>
-            </ul>
-
-            <a
-              href="https://github.com/Harsha-C2508/acceptable-mountain-6338.git"
-              aria-label="source code"
-              class="link link--icon"
-              target="_blank"
-            >
-             <button class="button">GitHub  <i aria-hidden="true" class="fab fa-github"></i></button>
-            </a>
-            <a
-              href="https://myntra-clone-nu.vercel.app/"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-              <button class="button">Live <i aria-hidden="true" class="fas fa-external-link-alt"></i></button>
-            </a>
+            <div class="project-btns">
+              <a
+                href="https://github.com/Harsha-C2508/acceptable-mountain-6338.git"
+                target="_blank"
+                class="small-btn button"
+              >
+                GitHub<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://myntra-clone-nu.vercel.app/"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
           </div>
-                <!-- third project -->
-          <div class="project">
-            <img src="./img/cricbuzz.png" alt="" class="project_img">
-            <h3 style="margin-top: 20px;color: blue;">Cricbuzz Clone</h3>
-            <p class="project__description">
-              Cricbuzz is an Indian cricket news website. It features, news, articles, and live coverage of cricket matches including videos, text commentary, player stats, and team rankings. You can find all the relevant details about cricket on this website.
-            </p>
-            <p class="project__description">
+
+          <div class="project-img">
+            <img src="./img/cricbuzz.png" alt="cricbuzz" />
+            <p class="project-title">Cricbuzz Clone</p>
+            <p class="project-subtitle">
+              Cricbuzz is an Indian cricket news website. It features, news, articles, and live coverage of cricket matches including videos, text commentary, player stats, and team rankings.
+               You can find all the relevant details about cricket on this website. <br />
+              <br />
               Crickbuzz provide every news related to cricket, the live scores, tournaments, Schedule matches, and many more.
-            </p>
-            <p class="project__description">
+              <br />
+              <br>
               Features : Log-in, Sign-up, and Payment Page. Latest scores, news, 
               articles, etc. Avail Cricbuzz Plan.
+              <br>
+              <br />
+              Tech Stack : HTML | CSS | Javascript 
             </p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Tech Stack:</li>
-              <li class="project__stack-item">HTML |</li>
-              <li class="project__stack-item">CSS |</li>
-              <li class="project__stack-item">JavaScript</li>
-            </ul>
+            <div class="project-btns">
+              <a
+                href="https://github.com/Navedphysicist/Crickbuzz.git"
+                target="_blank"
+                class="small-btn button"
+              >
+                GitHub<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href="https://friendly-stonebraker-f7080d.netlify.app/"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
+          </div>
 
-            <a
-              href="https://github.com/Navedphysicist/Crickbuzz.git"
-              aria-label="source code"
-              class="link link--icon"
-              target="_blank"
-            >
-            <button class="button">GitHub  <i aria-hidden="true" class="fab fa-github"></i></button>
-            </a>
-            <a
-              href="https://friendly-stonebraker-f7080d.netlify.app/"
-              aria-label="live preview"
-              class="link link--icon"
-              target="_blank"
-            >
-            <button class="button">Live <i aria-hidden="true" class="fas fa-external-link-alt"></i></button>
-            </a>
+          <div class="project-img">
+            <img src="./img/tri.png" alt="Tripoto" />
+            <p class="project-title">Tripoto Clone</p>
+            <p class="project-subtitle">
+             Tripoto is the website where you are able to book the hotels,tickets,
+             for holidays in and out the nation along with the guides. And also we are
+             giving an opportunity to design the package too.
+              <br />
+              <br />
+              Tech Stack : HTML | CSS | Javascript | React | Redux | Chakra-UI | Material-UI
+            </p>
+            <div class="project-btns">
+              <a
+                href="https://github.com/prabhatm39/flowery-ear-2957.git"
+                target="_blank"
+                class="small-btn button"
+              >
+                GitHub<i class="bx bxl-github"></i>
+              </a>
+              <a
+                href=" https://verdant-griffin-4c7b5f.netlify.app/"
+                target="_blank"
+                class="small-btn button"
+              >
+                Live<i class="bx bx-link-external"></i>
+              </a>
+            </div>
           </div>
         </div>
       </section>
+    </main>
 
-      <!-- Contact -->
-      <section class="section contact center" id="Contact">
-        <h2 class="section__title ">Don't Be Stranger !</h2>
-        <p class="line"></p>
-        <p style="margin-top: 20px;">Connect with me online</p>
-       <div class="social-link">
-            <a
-            href="https://www.linkedin.com/in/harsha-c-053b31233/"
-            target="_blank"
-            class="footer-icon"
-            ><i class="bx bxl-linkedin">
-              <br />
-              LinkedIn</i
-            ></a
-          >
-          <a
+    <!--===== FOOTER + CONTACT=====-->
+    <footer class="footer section" id="contact">
+      <h2 class="section-title">Don't Be Stranger !</h2>
+      <p class="footer-title">Connect with me online</p>
+      <div class="footer-social">
+        <a
+          href="https://www.linkedin.com/in/harsha-c-053b31233/"
+          target="_blank"
+          class="footer-icon"
+          ><i class="bx bxl-linkedin">
+            <br />
+            LinkedIn</i
+          ></a
+        >
+        <a
             href="https://medium.com/@harshac2508"
             target="_blank"
             class="footer-icon"
@@ -268,42 +399,27 @@
               Medium</i
             ></a
           >
-            <a
-            href="mailto:harshac2508@gmail.com"
-            target="_blank"
-            class="footer-icon"
-            ><i class="bx bx-mail-send">
-                <br />
-                E-mail</i
-            ></a
-            >
-          <a href="tel:+918943995700" target="_blank" class="footer-icon"
-            ><i class="bx bx-phone">
-              <br />
-              Phone</i
-            ></a
-          >
-       </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <a
-        href="https://github.com/Harsha-C2508"
-        class="link footer__link"
-      >
-        Created By Harsha C
-      </a>
+       
+        <a
+          href="mailto:harshac2508@gmail.com"
+          target="_blank"
+          class="footer-icon"
+          ><i class="bx bx-mail-send">
+            <br />
+            E-mail</i
+          ></a
+        >
+        <a href="tel:+918943995700" target="_blank" class="footer-icon"
+          ><i class="bx bx-phone">
+            <br />
+            Phone</i
+          ></a
+        >
+      </div>
+      <p>&#169; 2020 copyright all right reserved</p>
     </footer>
 
-    <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
-    </div>
-
+    <!--===== MAIN JS =====-->
     <script src="./js/index.js"></script>
   </body>
 </html>
