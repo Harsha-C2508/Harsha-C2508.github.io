@@ -106,7 +106,6 @@ img {
 
 .proimg{
   height: 350px;
-  margin-left: 170px;
   border-radius: 7px;
   margin-bottom: 20px;
 }
@@ -152,9 +151,9 @@ img {
   }
   .proimg{
     height: 300px;
-    margin-left: 10px;
     border-radius: 7px;
     margin-bottom: 20px;
+    margin-left: -100px;
   }
 }
 .nav-item {
