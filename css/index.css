@@ -108,6 +108,7 @@ img {
   height: 350px;
   border-radius: 7px;
   margin-bottom: 20px;
+  margin-left: 180px;
 }
 
 /*===== LAYOUT =====*/
@@ -153,7 +154,7 @@ img {
     height: 300px;
     border-radius: 7px;
     margin-bottom: 20px;
-    margin-left: -100px;
+    margin-left: 50px;
   }
 }
 .nav-item {
@@ -452,13 +453,6 @@ img.man-icons {
     width: 80px;
     top: 3rem;
   }
-  .proimg{
-    height: 300px;
-    margin-left: 10px;
-    border-radius: 7px;
-    margin-bottom: 20px;
-  }
-
   .nav {
     height: calc(var(--header-height) + 1rem);
   }
@@ -504,9 +498,11 @@ img.man-icons {
     width: 50%;
     transition: 0.5s;
   }
-  /* .about-container {
-    width: 50%;
-  } */
+  .proimg{
+    height: 300px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+  }
   .skills-container {
     grid-template-columns: repeat(2, 1fr);
     text-align: initial;
