@@ -104,6 +104,13 @@ img {
   padding-bottom: 2rem;
 }
 
+.proimg{
+  height: 350px;
+  margin-left: 170px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
 /*===== LAYOUT =====*/
 .bd-grid {
   max-width: 1024px;
@@ -142,6 +149,12 @@ img {
     padding: 2rem;
     background-color: var(--second-color);
     transition: 0.5s;
+  }
+  .proimg{
+    height: 350px;
+    margin-left: 70px;
+    border-radius: 7px;
+    margin-bottom: 20px;
   }
 }
 .nav-item {
