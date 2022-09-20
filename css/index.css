@@ -152,7 +152,7 @@ img {
   }
   .proimg{
     height: 350px;
-    margin-left: 70px;
+    margin-left: 10px;
     border-radius: 7px;
     margin-bottom: 20px;
   }
@@ -452,6 +452,12 @@ img.man-icons {
   .section-title::after {
     width: 80px;
     top: 3rem;
+  }
+  .proimg{
+    height: 350px;
+    margin-left: 10px;
+    border-radius: 7px;
+    margin-bottom: 20px;
   }
 
   .nav {
