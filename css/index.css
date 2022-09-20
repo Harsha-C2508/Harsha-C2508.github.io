@@ -152,6 +152,7 @@ img {
   }
   .proimg{
     height: 350px;
+    margin-left: -10px;
     border-radius: 7px;
     margin-bottom: 20px;
   }
@@ -454,6 +455,7 @@ img.man-icons {
   }
   .proimg{
     height: 350px;
+    margin-left: -10px;
     border-radius: 7px;
     margin-bottom: 20px;
   }
