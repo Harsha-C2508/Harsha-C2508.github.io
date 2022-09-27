@@ -156,6 +156,16 @@ img {
     margin-bottom: 20px;
     margin-left: 50px;
   }
+  .home-img {
+    right: 10%;
+    top: 60%;
+    border-radius: 50%;
+  }
+  .homeImg{
+    border-radius: 50%; 
+    height: 300px;
+    width: 300px;
+  }
 }
 .nav-item {
   margin-bottom: var(--mb-4);
@@ -492,6 +502,21 @@ img.man-icons {
     max-width: 420px;
     bottom: 15%;
   }
+  .homeImg{
+    border-radius: 50%; 
+    height: 440px;
+    width: 430px;
+  }
+  .aboutBox{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .aboutTextBox{
+    width: 85%;
+    text-align: center;
+  }
   .about-container {
     align-items: center;
     margin: auto;
@@ -530,5 +555,21 @@ img.man-icons {
   }
   .home-img {
     right: 10%;
+    top: 20%;
+    border-radius: 50%;
+  }
+  .homeImg{
+    border-radius: 50%; 
+    height: 440px;
+    width: 430px;
+  }
+  .aboutBox{
+    text-align: center;
+    display: flex;
+    gap: 10px;
+  }
+  .aboutTextBox{
+    width: 85%;
+    text-align: left;
   }
 }
