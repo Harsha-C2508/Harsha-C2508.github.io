@@ -84,3 +84,6 @@ const showMenu = ( toggleId, navId ) => {
   
 //   /*SCROLL CONTACT*/
 //   // sr.reveal(".contact-input", { interval: 200 });
+
+// gitHub calender part
+  new GitHubCalendar(".calendar", "Harsha-C2508");
