@@ -573,3 +573,20 @@ img.man-icons {
     text-align: left;
   }
 }
+
+@media screen and (max-width: 380px){
+  .homeImg{
+    border-radius: 50%; 
+    height: 250px;
+    width: 430px;
+  }
+  .home-img {
+    right: 10%;
+    top: 70%;
+    border-radius: 50%;
+  }
+  .github{
+    width: 105%;
+    text-align: left;
+  }
+}
