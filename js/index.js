@@ -86,7 +86,8 @@ const showMenu = ( toggleId, navId ) => {
 //   // sr.reveal(".contact-input", { interval: 200 });
 
 // gitHub calender part
-  // new GitHubCalendar(".calendar", "Harsha-C2508");
   GitHubCalendar(".calendar", "Harsha-C2508");
-  // or enable responsive functionality
+  // enable responsive functionality
   GitHubCalendar(".calendar", "Harsha-C2508", { responsive: true });
+
+  /* fully completed */
