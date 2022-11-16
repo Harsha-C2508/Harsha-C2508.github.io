@@ -88,6 +88,6 @@ const showMenu = ( toggleId, navId ) => {
 // gitHub calender part
   GitHubCalendar(".calendar", "Harsha-C2508");
   // enable responsive functionality
-  GitHubCalendar(".calendar", "Harsha-C2508", { responsive: true });
+   GitHubCalendar(".calendar", "Harsha-C2508", { responsive: true });
 
   /* fully completed */
