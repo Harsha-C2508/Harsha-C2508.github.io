@@ -33,15 +33,7 @@ const showMenu = ( toggleId, navId ) => {
     } )
   } )
   
-  // function linkAction() {
-  //   /*Active link*/
-  //   navLinks.forEach((n) => n.classList.remove("active"));
-  //   this.classList.add("active");
-  
-  //   /*Remove menu mobile*/
   const navMenu = document.getElementById( "nav-menu" );
-  //   navMenu.classList.remove("show");
-  // }
   navLinks.forEach( ( n ) => n.addEventListener( "click", () => { navMenu.classList.remove( "show" ) } ) );
   
   /*===== COPY Email =====*/
