@@ -72,9 +72,9 @@ const showMenu = ( toggleId, navId ) => {
 //   sr.reveal(".skills-img", { delay: 600 });
   
 //   /*SCROLL projects*/
-  sr.reveal( ".project-img", {interval: 200 } );
+  // sr.reveal( ".project-img", {interval: 200 } );
   
-//   /*SCROLL CONTACT*/
+//   /*SCROLL CONTACT*/e
 //   // sr.reveal(".contact-input", { interval: 200 });
 
 // gitHub calender part
