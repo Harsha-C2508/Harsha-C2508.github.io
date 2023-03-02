@@ -67,12 +67,12 @@ const showMenu = ( toggleId, navId ) => {
   
 //   /*SCROLL SKILLS*/
   // sr.reveal( ".skills-subtitle", {} );
-  // sr.reveal( ".skills-text", {} );
+   sr.reveal( ".skills-text", {} );
   // sr.reveal( ".skills-data", { interval: 100 } );
 //   sr.reveal(".skills-img", { delay: 600 });
   
 //   /*SCROLL projects*/
-  // sr.reveal( ".project-img", {interval: 200 } );
+  sr.reveal( ".project-img", {interval: 500 } );
   
 //   /*SCROLL CONTACT*/e
 //   // sr.reveal(".contact-input", { interval: 200 });
