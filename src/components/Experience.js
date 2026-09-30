@@ -4,42 +4,40 @@ import { FaBriefcase } from 'react-icons/fa';
 
 const experienceData = [
   {
-    position: 'Software Engineer 1',
-    company: 'Opsera.io',
+    position: 'Software Engineer I',
+    company: 'Opsera.IO',
     location: 'Chennai, India',
-    duration: 'September 2024 - Present',
-    description: 'Working as a full-time software engineer, focusing on frontend development and contributing to enterprise-level applications in the Salesforce team.',
+    duration: 'September 2024 – Present',
+    description: 'Developing and enhancing frontend features for enterprise SaaS applications used by engineering teams.',
     responsibilities: [
-      'Leading the development of new features and improvements in the Salesforce platform',
-      'Mentoring junior developers and conducting code reviews',
-      'Collaborating with cross-functional teams to deliver high-quality solutions',
-      'Implementing best practices for code quality and performance optimization',
-      'Contributing to architectural decisions and technical documentation',
-      'Driving the adoption of new technologies and development practices',
+      'Collaborated with product managers, designers, QA, and backend engineers to deliver production-ready solutions',
+      'Investigated and resolved issues across QA, UAT, and Production environments',
+      'Built reusable React components and improved overall user experience',
+      'Integrated frontend applications with REST APIs and backend services',
+      'Participated in code reviews and contributed to maintainable, scalable codebases',
     ],
-    technologies: ['React', 'Salesforce', 'JavaScript', 'HTML/CSS', 'Git', 'CI/CD', 'Jira', 'Confluence', 'Figma', 'Nodejs', 'Expressjs', 'MongoDB']
+    technologies: ['React', 'TypeScript', 'JavaScript', 'Node.js', 'REST APIs', 'Git', 'Playwright', 'Jira']
   },
   {
     position: 'Software Engineer Intern',
-    company: 'Opsera.io',
+    company: 'Opsera.IO',
     location: 'Chennai, India',
-    duration: 'June 2023 - August 2024',
-    description: 'Worked as a frontend developer in the Salesforce team, contributing to the development of enterprise-level applications and learning industry best practices.',
+    duration: 'June 2023 – August 2024',
+    description: 'Developed frontend features using React and JavaScript for Salesforce-related applications.',
     responsibilities: [
-      'Developed and maintained frontend components using React and Salesforce technologies',
-      'Collaborated with the team to implement new features and improve existing functionality',
-      'Worked on responsive design and user interface improvements',
-      'Participated in code reviews and agile development processes',
-      'Integrated with Salesforce APIs and services',
-      'Contributed to the development of CI/CD pipelines',
+      'Implemented responsive UI components and improved application usability',
+      'Worked closely with senior engineers to debug and resolve issues',
+      'Integrated APIs and contributed to feature development across multiple releases',
+      'Gained hands-on experience with enterprise software development practices and CI/CD workflows',
     ],
-    technologies: ['React', 'Salesforce', 'JavaScript', 'HTML/CSS', 'Git', 'Jira', 'CI/CD', 'Confluence', 'Figma', 'Nodejs', 'Expressjs', 'MongoDB']
+    technologies: ['React', 'JavaScript', 'Salesforce', 'Node.js', 'Express.js', 'MongoDB', 'Git', 'CI/CD']
   },
 ];
 
 const Experience = () => {
   return (
-    <div className="py-16">
+    <div className="py-4">
+      {/* Section Header */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -47,122 +45,73 @@ const Experience = () => {
         transition={{ duration: 0.5 }}
         className="text-center mb-16"
       >
-        <h2 className="heading-primary">Work Experience</h2>
-        <div className="w-24 h-1 bg-blue-600 mx-auto mb-8" />
-        <p className="text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+        <p className="text-blue-600 dark:text-blue-400 font-medium mb-2 tracking-wide uppercase text-sm">My Journey</p>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">Work Experience</h2>
+        <div className="w-16 h-1 bg-blue-600 mx-auto rounded-full mb-8" />
+        <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed">
           My professional journey has been marked by continuous learning and growth,
           working on challenging projects and embracing new technologies.
         </p>
       </motion.div>
 
-      <div className="relative">
-        {/* Timeline line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-blue-200 dark:bg-blue-800" />
+      {/* Timeline */}
+      <div className="relative max-w-3xl mx-auto">
+        <div className="absolute left-6 md:left-8 top-0 bottom-0 w-px bg-gray-200 dark:bg-gray-700" />
 
-        <div className="space-y-12">
+        <div className="space-y-8">
           {experienceData.map((exp, index) => (
             <motion.div
               key={exp.position}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.2 }}
-              className={`relative flex items-center ${
-                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-              } flex-col`}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              className="relative pl-16 md:pl-20"
             >
-              {/* Timeline dot */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center z-10">
-                <FaBriefcase className="w-4 h-4 text-white" />
+              <div className="absolute left-4 md:left-6 top-2 w-4 h-4 md:w-5 md:h-5 rounded-full bg-blue-600 border-4 border-white dark:border-gray-900 shadow-sm z-10 flex items-center justify-center">
+                <FaBriefcase className="w-2 h-2 text-white hidden md:block" />
               </div>
 
-              {/* Content */}
-              <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'} md:text-right`}>
-                <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-                  <h3 className="text-xl font-semibold text-blue-600 mb-2">{exp.position}</h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-2">{exp.company}</p>
-                  <p className="text-gray-500 dark:text-gray-500 mb-2">{exp.location}</p>
-                  <p className="text-sm text-blue-600 dark:text-blue-400 mb-4">{exp.duration}</p>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4">{exp.description}</p>
+              <div className="bg-white dark:bg-gray-800/50 border border-gray-100 dark:border-gray-700/50 rounded-2xl p-6 md:p-7">
+                <div className="flex flex-wrap items-center gap-3 mb-3">
+                  <span className="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg text-xs font-medium">
+                    {exp.duration}
+                  </span>
+                  <span className="text-sm text-gray-500 dark:text-gray-400">{exp.location}</span>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">{exp.position}</h3>
+                <p className="text-blue-600 dark:text-blue-400 text-sm font-medium mb-3">{exp.company}</p>
+                <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-4">{exp.description}</p>
 
-                  <div className="mb-4">
-                    <h4 className="font-semibold text-gray-700 dark:text-gray-300 mb-2">Key Responsibilities:</h4>
-                    <ul className="space-y-2">
-                      {exp.responsibilities.map((responsibility, idx) => (
-                        <li key={idx} className="text-gray-600 dark:text-gray-400 flex items-start">
-                          <span className="text-blue-600 mr-2">•</span>
-                          {responsibility}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                <div className="mb-4">
+                  <h4 className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Key Responsibilities</h4>
+                  <ul className="space-y-2">
+                    {exp.responsibilities.map((resp, idx) => (
+                      <li key={idx} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                        <span className="mt-1.5 w-1.5 h-1.5 rounded-full bg-blue-600 shrink-0" />
+                        {resp}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
-                  <div>
-                    <h4 className="font-semibold text-gray-700 dark:text-gray-300 mb-2">Technologies:</h4>
-                    <div className="flex flex-wrap gap-2 justify-end">
-                      {exp.technologies.map((tech) => (
-                        <span
-                          key={tech}
-                          className="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-300 rounded-full text-sm"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                <div className="flex flex-wrap gap-1.5">
+                  {exp.technologies.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2.5 py-1 bg-gray-100 dark:bg-gray-700/50 text-gray-600 dark:text-gray-300 rounded-lg text-xs"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
-
-      {/* Skills Highlight */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="mt-16 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-8"
-      >
-        <h3 className="heading-secondary text-center mb-8">Professional Highlights</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {[
-            {
-              title: 'Projects Contributed',
-              value: '15+',
-              description: 'Successfully delivered enterprise-level applications',
-            },
-            {
-              title: 'Technologies Mastered',
-              value: '8+',
-              description: 'Expertise in modern web and Salesforce technologies',
-            },
-            {
-              title: 'Career Growth',
-              value: '2x',
-              description: 'Promoted from Intern to Software Engineer 1',
-            },
-          ].map((highlight, index) => (
-            <motion.div
-              key={highlight.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="text-center"
-            >
-              <h4 className="text-4xl font-bold text-blue-600 mb-2">{highlight.value}</h4>
-              <p className="text-lg font-semibold text-gray-700 dark:text-gray-300 mb-2">
-                {highlight.title}
-              </p>
-              <p className="text-gray-600 dark:text-gray-400">{highlight.description}</p>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
     </div>
   );
 };
 
-export default Experience; 
+export default Experience;

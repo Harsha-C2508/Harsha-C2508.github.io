@@ -1,26 +1,13 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { FaGithub, FaLinkedin, FaMedium, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMedium, FaArrowUp } from 'react-icons/fa';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   const socialLinks = [
-    {
-      icon: FaGithub,
-      href: 'https://github.com/Harsha-C2508',
-      label: 'GitHub',
-    },
-    {
-      icon: FaLinkedin,
-      href: 'https://www.linkedin.com/in/harsha-c-053b31233/',
-      label: 'LinkedIn',
-    },
-    {
-      icon: FaMedium,
-      href: 'https://medium.com/@harshac2508',
-      label: 'Medium',
-    },
+    { icon: FaGithub, href: 'https://github.com/Harsha-C2508', label: 'GitHub' },
+    { icon: FaLinkedin, href: 'https://www.linkedin.com/in/harsha-c-053b31233/', label: 'LinkedIn' },
+    { icon: FaMedium, href: 'https://medium.com/@harshac2508', label: 'Medium' },
   ];
 
   const quickLinks = [
@@ -31,87 +18,87 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="container-custom py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* About */}
+    <footer className="bg-gray-50 dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800">
+      <div className="container-custom py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+          {/* Brand */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">About Me</h3>
-            <p className="text-gray-400 mb-4">
-              A passionate Full Stack Developer focused on creating beautiful and functional web applications.
-              Always eager to learn and explore new technologies.
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center">
+                <span className="text-white font-bold text-sm">H</span>
+              </div>
+              <span className="font-semibold text-gray-900 dark:text-white">Harsha C</span>
+            </div>
+            <p className="text-sm text-gray-500 dark:text-gray-400 mb-5 leading-relaxed max-w-xs">
+              Full Stack Developer passionate about creating beautiful and performant web applications.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex gap-3">
               {socialLinks.map((social) => (
-                <motion.a
+                <a
                   key={social.label}
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-blue-400 transition-colors"
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
+                  className="p-2.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors"
+                  aria-label={social.label}
                 >
-                  <social.icon className="w-6 h-6" />
-                  <span className="sr-only">{social.label}</span>
-                </motion.a>
+                  <social.icon className="w-4 h-4" />
+                </a>
               ))}
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h4 className="font-semibold text-gray-900 dark:text-white text-sm mb-4">Quick Links</h4>
+            <ul className="space-y-2.5">
               {quickLinks.map((link) => (
                 <li key={link.name}>
-                  <motion.a
+                  <a
                     href={link.href}
-                    className="text-gray-400 hover:text-blue-400 transition-colors"
-                    whileHover={{ x: 5 }}
+                    className="text-sm text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                   >
                     {link.name}
-                  </motion.a>
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact */}
           <div>
-            <h3 className="text-xl font-semibold text-white mb-4">Contact Info</h3>
-            <ul className="space-y-2">
-              <li className="text-gray-400">
-                <span className="font-medium text-white">Email:</span>{' '}
-                <a href="mailto:harshac2508@gmail.com" className="hover:text-blue-400 transition-colors">
+            <h4 className="font-semibold text-gray-900 dark:text-white text-sm mb-4">Contact</h4>
+            <ul className="space-y-2.5 text-sm text-gray-500 dark:text-gray-400">
+              <li>
+                <a href="mailto:harshac2508@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   harshac2508@gmail.com
                 </a>
               </li>
-              <li className="text-gray-400">
-                <span className="font-medium text-white">Location:</span>{' '}
-                Malappuram, Kerala
-              </li>
-              <li className="text-gray-400">
-                <span className="font-medium text-white">Availability:</span>{' '}
+              <li>Malappuram, Kerala</li>
+              <li className="flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-green-500" />
                 Available for work
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-gray-800 mt-12 pt-8 text-center">
-          <p className="text-gray-400">
-            © {currentYear} Harsha C. All rights reserved. Made with{' '}
-            <FaHeart className="inline-block text-red-500 mx-1" /> using React and Tailwind CSS
+        {/* Bottom */}
+        <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
+            © {currentYear} Harsha C. Built with React & Tailwind CSS.
           </p>
-          <p className="text-gray-500 text-sm mt-2">
-            Designed and built with modern web technologies
-          </p>
+          <a
+            href="#home"
+            className="p-2.5 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors"
+            aria-label="Back to top"
+          >
+            <FaArrowUp className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </footer>
   );
 };
 
-export default Footer; 
+export default Footer;
