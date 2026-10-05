@@ -12,8 +12,9 @@ const navItems = [
   { name: 'Contact', href: '#contact' },
   {
     name: 'Resume',
-    href: 'https://drive.google.com/file/d/1idWPc8n4UPBd83AJa1_dwePfj0n8dRzb/view?usp=sharing',
+    href: '/Harsha_C_Resume.pdf',
     isExternal: true,
+    isDownload: true,
   },
 ];
 
@@ -89,8 +90,9 @@ const Navbar = () => {
                 <motion.a
                   key={item.name}
                   href={item.href}
-                  target={item.isExternal ? '_blank' : undefined}
-                  rel={item.isExternal ? 'noopener noreferrer' : undefined}
+                  target={item.isExternal && !item.isDownload ? '_blank' : undefined}
+                  rel={item.isExternal && !item.isDownload ? 'noopener noreferrer' : undefined}
+                  download={item.isDownload || undefined}
                   className={`relative px-4 py-2 rounded-lg text-sm font-medium transition-colors ${
                     item.isExternal
                       ? 'ml-2 bg-blue-600 text-white hover:bg-blue-700'
@@ -182,8 +184,9 @@ const Navbar = () => {
                     <motion.a
                       key={item.name}
                       href={item.href}
-                      target={item.isExternal ? '_blank' : undefined}
-                      rel={item.isExternal ? 'noopener noreferrer' : undefined}
+                      target={item.isExternal && !item.isDownload ? '_blank' : undefined}
+                      rel={item.isExternal && !item.isDownload ? 'noopener noreferrer' : undefined}
+                      download={item.isDownload || undefined}
                       initial={{ opacity: 0, x: 20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: index * 0.05 }}
