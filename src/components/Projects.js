@@ -19,7 +19,7 @@ const projects = [
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Redux', 'Chakra UI', 'Razorpay'],
     category: 'fullstack',
     github: 'https://github.com/Harsha-C2508/HS-shop',
-    live: 'https://hs-shop-finl.onrender.com/',
+    live: 'https://hs-shop-byharsha.vercel.app',
   },
   {
     title: 'Book Stash',
@@ -28,7 +28,7 @@ const projects = [
     technologies: ['React', 'TypeScript', 'Node.js', 'Express', 'PostgreSQL', 'Drizzle ORM', 'Mantine', 'OpenAI'],
     category: 'fullstack',
     github: 'https://github.com/Harsha-C2508/Book-Stash',
-    live: 'https://book-stash.onrender.com/',
+    live: 'https://book-stash-7qqy.vercel.app',
   },
   {
     title: 'TimeGrid',
